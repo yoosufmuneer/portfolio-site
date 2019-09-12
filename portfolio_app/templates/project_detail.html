@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h4> More about the project</h4>
+
+<div class="row">
+    <div class="col m12">
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Technology Used</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>{{ projects.title }}</td>
+                    <td>{{ projects.description }}</td>
+                    <td>{{ projects.technology }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
